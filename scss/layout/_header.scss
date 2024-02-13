@@ -1,0 +1,103 @@
+header {
+  padding-top: 25px;
+  .header_top {
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    .header_middle,
+    .header_right {
+      margin-top: 5px;
+    }
+    .header_middle {
+      display: flex;
+      .call,
+      .email,
+      .market {
+        padding: 0 20px;
+        float: left;
+        border-right: 1px solid $border;
+        h3 {
+          font-size: 15px;
+          color: $iconHover;
+          font-weight: 700;
+          line-height: 1.2;
+          margin-top: 0;
+        }
+        p {
+          margin-bottom: 0;
+          font-size: 15px;
+          color: $headerP;
+          line-height: 1.4;
+        }
+        .fa-caret-up {
+          font-size: 17px;
+          color: $green;
+          padding-right: 3px;
+          line-height: 1;
+        }
+      }
+    }
+    .header_right ul {
+      padding-left: 15px;
+      display: flex;
+      a {
+        color: $white;
+        font-size: 21px;
+        display: block;
+        width: 52px;
+        height: 52px;
+        line-height: 52px;
+        text-align: center;
+        background: $icon;
+        color: $white;
+        border-radius: 50%;
+        margin-right: 15px;
+        transition: 0.5s ease all;
+        &:hover {
+          background-color: $iconHover;
+        }
+      }
+    }
+  }
+  .header_bottom {
+    background-color: $headerbottom;
+    .main-menu {
+      display: flex;
+      gap: 10px;
+      .dropdown {
+        ul {
+          position: absolute;
+          opacity: 0;
+          transition: 0.5s;
+        }
+        &:hover {
+          ul {
+            opacity: 1 !important;
+            display: flex !important;
+            flex-direction: column;
+            z-index: 10000 !important;
+            background-color: $white;
+            position: absolute;
+            width: 200px;
+          }
+        }
+      }
+      li {
+        a {
+          font-size: 15px;
+          color: #61656f;
+          font-weight: 700;
+          line-height: 1.467;
+          text-transform: uppercase;
+          padding: 20px 0px;
+          margin-right: 25px;
+          display: block;
+          transition: 0.5s ease all;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+

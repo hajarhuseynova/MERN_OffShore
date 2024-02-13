@@ -1,0 +1,14 @@
+@mixin Subtitle {
+  font-size: 20px;
+  font-family: roboto;
+  color: #093eb6;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 20px 0;
+}
+@mixin P {
+  font-size: 16px;
+  color: $pColor;
+  line-height: 1.688;
+  margin-bottom: 20px;
+}
