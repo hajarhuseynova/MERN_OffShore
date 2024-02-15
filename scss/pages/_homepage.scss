@@ -147,8 +147,7 @@ section {
     display: flex;
     justify-content: space-between;
   }
-  .hover-effect,
-  .img-hover-effect {
+  .hover-effect {
     background: #000;
     overflow: hidden;
     position: relative;
@@ -174,6 +173,9 @@ section {
     text-align: center;
     margin-left: -50px;
   }
+  .links {
+    align-items: center;
+  }
   .col-md-2 {
     a {
       border-radius: 3px;
@@ -185,6 +187,11 @@ section {
       width: 80px;
       padding: 15px 30px;
       text-decoration: none;
+
+      &:hover {
+        background: #093eb6;
+        color: #fff;
+      }
     }
   }
 }
@@ -951,8 +958,10 @@ section {
       }
     }
   }
+
   .home-publications .publications .col-sm-6 {
     width: 100%;
+    margin-bottom: 30px;
   }
   .home-partners {
     .text-center .title-2 {
@@ -979,7 +988,7 @@ section {
     }
   }
   footer .widgets .col-sm-6 {
-    width: 100%;
+    width: 60% !important;
     margin-top: 0;
     margin-bottom: 20px;
   }
@@ -997,5 +1006,45 @@ section {
   }
   .carousel-control-prev {
     left: -35px !important;
+  }
+  .container .row .about-content .about-services .service {
+    text-align: center !important;
+    margin: auto;
+    display: flex;
+    justify-content: center !important;
+  }
+}
+@media screen and (max-width: 580px) {
+  .home-company {
+    height: 900px !important;
+    .company .col-md-7 .company-image {
+      .img-right {
+        position: initial;
+        margin-top: -50px;
+        max-width: 350px;
+      }
+      .img-left {
+        position: initial;
+        max-width: 230px;
+        margin-top: 120px;
+      }
+    }
+  }
+  .home-company .company .company-details {
+    max-width: 370px !important;
+  }
+  .services .col-md-4 .hover-effect {
+    width: 370px;
+    height: 270px;
+  }
+  .ceo .col-md-6 {
+    width: 450px;
+    text-align: center;
+    padding: 0;
+  }
+  .bt-primary {
+    background-color: #093eb6;
+    color: #fff;
+    padding: 8px 10px;
   }
 }

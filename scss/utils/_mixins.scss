@@ -1,7 +1,7 @@
 @mixin Subtitle {
   font-size: 20px;
   font-family: roboto;
-  color: #093eb6;
+  color: $iconHover;
   font-weight: 700;
   line-height: 1.4;
   margin: 20px 0;

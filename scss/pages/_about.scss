@@ -1,0 +1,376 @@
+.page-title {
+  background: url(../images/page_title_bg.png) no-repeat left center;
+  background-size: cover;
+  padding: 70px 0;
+  margin-top: -20px;
+  h2 {
+    margin: 0 0 25px;
+    font-size: 50px;
+    color: $white;
+    font-weight: 700;
+    line-height: 1.26;
+  }
+  p {
+    font-size: 20px;
+    color: $white;
+    font-weight: 100;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+}
+.breadcrumbs {
+  background: $headerbottom;
+  padding: 25px 0;
+  span {
+    padding-right: 15px;
+    font-size: 15px;
+    color: #61656f;
+    font-weight: 700;
+    text-transform: uppercase;
+    i {
+      padding-right: 5px;
+    }
+  }
+  i {
+    padding-right: 15px;
+    color: $colorlight;
+  }
+  a {
+    font-size: 15px;
+    color: $lightgray;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+.container {
+  .row {
+    .about-content {
+      float: right !important;
+      .about-company {
+        padding-bottom: 0;
+        .com {
+          h2 {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
+            background: #ffda44;
+            margin: 0;
+            padding: 0 15px;
+            line-height: 28px;
+          }
+          h4 {
+            @include Subtitle;
+          }
+          p {
+            @include P;
+          }
+        }
+      }
+      .about-cta {
+        padding: 50px 0 0;
+        .cta {
+          padding: 40px 45px;
+          background: $yellow;
+          h2 {
+            font-size: 33px;
+            color: rgb(103, 95, 63);
+            line-height: 1.455;
+            text-align: left;
+            margin: 0;
+            font-family: georgia;
+          }
+        }
+      }
+      .about-culture {
+        padding: 80px 0;
+        .culture {
+          .cul {
+            h2.culture-title {
+              font-size: 28px;
+              font-family: roboto;
+              color: #093eb6;
+              font-weight: 700;
+              line-height: 1;
+              margin: 0 0 25px;
+            }
+            h4.culture-subtitle {
+              font-size: 20px;
+              font-family: roboto;
+              color: rgb(76, 79, 84);
+              font-weight: 700;
+              line-height: 1.4;
+              margin: 0 0 15px;
+            }
+            p {
+              @include P;
+            }
+          }
+          .culture-video {
+            text-align: right;
+            .hover-effect {
+              background: #000;
+              overflow: hidden;
+              position: relative;
+              display: inline-block;
+              margin: 0 -1.5px;
+              img {
+                border: 10px solid #f9f9f9;
+                box-shadow: 0 0 43px rgba(0, 0, 0, 0.08);
+              }
+            }
+          }
+        }
+      }
+      .about-stats {
+        padding-top: 0;
+        padding-bottom: 20px;
+        .stats {
+          background: #f4f5f8;
+          > div {
+            padding: 30px 20px 40px 50px;
+            border: 1px solid #e9ebef;
+
+            &:first-child {
+              border-top: 0;
+              border-left: 0;
+            }
+            &:nth-child(2) {
+              border-top: 0;
+              border-right: 0;
+            }
+            &:nth-child(3) {
+              border-left: 0;
+              border-bottom: 0;
+            }
+            :nth-child(4) {
+              border-right: 0;
+              border-bottom: 0;
+            }
+          }
+          .col-xs-6 {
+            width: 50%;
+            img {
+              float: left;
+              padding-right: 12px;
+            }
+            .stats-info {
+              float: left;
+              h4.counter {
+                font-size: 36px;
+                font-family: roboto;
+                color: #093eb6;
+                font-weight: 700;
+                margin: 0;
+                line-height: 1;
+              }
+              p {
+                @include P;
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+      .about-accordion {
+        padding: 40px 0;
+        .accordion-item {
+          border: 1px solid rgba(244, 244, 244, 0.8);
+          background: $white;
+          box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
+          margin-bottom: 0px;
+          .accordion-header {
+            button {
+              color: #093eb6;
+              display: block;
+              position: relative;
+              text-decoration: none;
+            }
+          }
+          .accordion-body {
+            font-size: 16px;
+            color: #677078;
+            line-height: 1.688;
+            margin-bottom: 20px;
+          }
+        }
+      }
+      .about-services {
+        padding: 40px 0;
+        .service {
+          margin-bottom: 100px;
+          .hover-effect {
+            background: #000;
+            overflow: hidden;
+            position: relative;
+            display: inline-block;
+            margin: 0 -1.5px;
+            img {
+              width: 100%;
+            }
+          }
+          .subtitle {
+            @include Subtitle;
+          }
+          p {
+            max-width: 400px;
+            @include P;
+          }
+          a.link {
+            font-size: 16px;
+            font-family: roboto;
+            color: #ffbe00;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: 0.5s;
+            &:hover {
+              color: $iconHover;
+            }
+          }
+        }
+      }
+    }
+    .sidebar {
+      padding: 80px 15px;
+      .sidebar-blog-categories {
+        margin-bottom: 45px;
+        ul {
+          background: $headerbottom;
+          padding-left: 0 !important;
+          li {
+            color: $body;
+            line-height: 1.8;
+            a {
+              font-size: 17px;
+              color: #61656f;
+              padding: 24px 30px;
+              display: block;
+              line-height: 1;
+              border-bottom: 1px solid #fcfcfd;
+
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      .sidebar-download {
+        margin-bottom: 45px;
+        .download-file {
+          background: #093eb6;
+          margin: 0;
+          padding: 0 15px;
+          border: 1px solid rgba(244, 244, 244, 0.8);
+          a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 700;
+            padding-left: 15px;
+            line-height: 50px;
+            display: block;
+            i {
+              color: #fff;
+              margin-right: 10px;
+            }
+            span {
+              color: rgba(255, 255, 255, 0.5);
+              float: right;
+              font-size: 14px;
+              color: #677078;
+              line-height: 50px;
+              display: inline-block;
+            }
+          }
+        }
+      }
+      .sidebar-fact {
+        padding: 20px 25px 25px;
+        background: $headerbottom;
+        h3 {
+          @include Subtitle;
+          margin: 0 0 20px;
+        }
+        p {
+          @include P;
+        }
+        a.bt {
+          background: #ffda44;
+          color: #544d33;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  .sidebar-download .download-file span {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .container {
+    .row {
+      .col-md-3 {
+        width: 100%;
+      }
+      .sidebar {
+        padding-top: 0;
+        max-width: 400px;
+        margin: 0 auto;
+        .sidebar-fact {
+          margin-bottom: 90px;
+        }
+      }
+    }
+  }
+  .col-md-9 {
+    flex: 0 0 auto;
+    width: 100% !important;
+    order: -1;
+  }
+  .container .row .about-content .about-services .service {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 798px) {
+  .container .row .about-content .about-culture {
+    .culture {
+      .col-sm-6 {
+        width: 100% !important;
+      }
+      .culture-video {
+        text-align: left !important;
+      }
+    }
+  }
+  .container .row .about-content .about-services .service {
+    display: flex;
+    justify-content: center;
+    .col-sm-6 {
+      width: 500px !important;
+      margin-bottom: 30px;
+    }
+  }
+  .container .row .about-content .about-services .service .hover-effect {
+    width: 100%;
+    h4 {
+      width: 100% !important;
+    }
+  }
+  .container .row .about-content .about-services .service p {
+    max-width: 100% !important;
+  }
+}
+@media screen and (max-width: 410px) {
+  .container
+    .row
+    .about-content
+    .about-culture
+    .culture
+    .culture-video
+    .hover-effect
+    img {
+    border: none;
+  }
+}
