@@ -27,6 +27,7 @@ section {
     object-fit: cover;
     object-position: center;
     .container {
+      z-index: 1;
       display: flex;
       flex-direction: column;
       h2 {
@@ -35,6 +36,7 @@ section {
         color: $white;
         font-weight: 700;
         line-height: 1.5;
+        z-index: 1000;
       }
       p {
         font-size: 20px;
@@ -42,6 +44,8 @@ section {
         line-height: 1.4;
         font-weight: 100;
         margin: 0 0 40px;
+        z-index: 1000;
+
         margin-top: 30px;
       }
       a {
@@ -49,6 +53,7 @@ section {
         background: $yellow;
         font-size: 16px;
         color: $brown;
+        z-index: 10000;
         font-weight: 700;
         padding: 0 40px;
         line-height: 60px;
@@ -58,6 +63,15 @@ section {
           background-color: $yellowHover;
         }
       }
+    }
+    &:after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      content: " ";
+      background: rgba(0, 0, 0, 0.44);
     }
   }
 }
@@ -1048,3 +1062,18 @@ section {
     padding: 8px 10px;
   }
 }
+// .hover-effect {
+//   &:hover {
+//     background: #000;
+//     overflow: hidden;
+//     position: relative;
+//     display: inline-block;
+//     margin: 0 -1.5px;
+//     img {
+//       width: 100%;
+//       object-fit: cover;
+//       transition: 0.5s ease all;
+//       backface-visibility: hidden;
+//     }
+//   }
+// }

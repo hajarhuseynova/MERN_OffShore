@@ -12,3 +12,20 @@
   line-height: 1.688;
   margin-bottom: 20px;
 }
+@mixin Link {
+  font-size: 16px;
+  font-family: roboto;
+  color: $linkyellow;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@mixin ColorTitle {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background: #ffda44;
+  margin: 0;
+  padding: 0 15px;
+  line-height: 28px;
+}
