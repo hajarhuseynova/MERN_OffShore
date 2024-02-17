@@ -249,8 +249,11 @@
               display: block;
               line-height: 1;
               border-bottom: 1px solid #fcfcfd;
-
               text-decoration: none;
+              transition: 0.5s;
+              &:hover {
+                background: #e9e9e9;
+              }
             }
           }
         }

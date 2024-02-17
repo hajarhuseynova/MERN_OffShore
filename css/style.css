@@ -131,7 +131,7 @@ table {
 }
 
 body {
-  font-family: roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .bt {
@@ -273,11 +273,15 @@ header .header_bottom .main-menu .dropdown:hover ul {
   z-index: 10000 !important;
   background-color: #fff;
   position: absolute;
-  width: 180px;
+  width: 210px;
   padding-left: 10px;
+  margin: 0 !important;
 }
 header .header_bottom .main-menu .dropdown:hover ul li {
-  font-size: 14px;
+  font-size: 12px;
+}
+header .header_bottom .main-menu .dropdown:hover ul li a {
+  font-size: 15px;
 }
 header .header_bottom .main-menu li a {
   font-size: 15px;
@@ -486,6 +490,10 @@ body {
 
 #hiddden {
   display: none !important;
+}
+
+a.bt:hover {
+  background: #f7cd22 !important;
 }
 
 .container {
@@ -1760,6 +1768,11 @@ section {
     color: #fff;
     padding: 8px 10px;
   }
+  footer .widgets .col-sm-6 {
+    width: 100% !important;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
 }
 .page-title {
   background: url(../images/page_title_bg.png) no-repeat left center;
@@ -2033,6 +2046,11 @@ section {
   line-height: 1;
   border-bottom: 1px solid #fcfcfd;
   text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.container .row .sidebar .sidebar-blog-categories ul li a:hover {
+  background: #e9e9e9;
 }
 .container .row .sidebar .sidebar-download {
   margin-bottom: 45px;
@@ -2784,6 +2802,13 @@ section.services-hood div p:last-child {
   padding: 7px;
   text-decoration: none;
   margin: 0 10px 12px 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.sidebar-tags a:hover {
+  background: #ddd;
+  color: #999;
 }
 
 .about-cta h2.title-2 {
